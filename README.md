@@ -1,3 +1,4 @@
+<img width="1881" height="863" alt="1" src="https://github.com/user-attachments/assets/ea826bdb-3ce9-4fde-9864-18861f0afb0c" />
 🛒 Soul Store – E-Commerce Website
 
 This is a simple E-Commerce Website developed using Core PHP and MySQL during my PM-USHA Internship at Dibrugarh University.
