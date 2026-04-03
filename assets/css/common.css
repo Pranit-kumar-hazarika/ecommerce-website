@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+input, textarea, select {
+    font-family: inherit;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-left a, .nav-right a {
+    font-size: 14px;
+    color: #333;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: #1abc9c;
+}
+
+.nav-logo {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1abc9c;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #1abc9c;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #1abc9c;
+}
+
+.btn-primary {
+    background: #1abc9c;
+}
+
+.btn-primary:hover {
+    background: #16a085;
+}
+
+.btn-danger {
+    background: #c0392b;
+}
+
+.btn-danger:hover {
+    background: #a93226;
+}
+
+.btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* ========== MESSAGES ========== */
+.success {
+    background: #e6fff2;
+    color: #27ae60;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 4px solid #27ae60;
+}
+
+.error {
+    background: #ffe5e5;
+    color: #c0392b;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 4px solid #c0392b;
+}
+
+.warning {
+    background: #fff3cd;
+    color: #856404;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ffc107;
+}
+
+/* ========== FORMS ========== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #1abc9c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26,188,156,0.3);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-left, .nav-right {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .nav-logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
